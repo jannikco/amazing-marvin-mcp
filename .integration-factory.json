@@ -1,42 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "8cfc5f89a1ac6b5c0c2f3449d284a71097a1f12fa7f61ec8f975860614b4eb80",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://github.com/amazingmarvin/MarvinAPI/wiki/Marvin-API"
-  ],
   "id": "amazing-marvin-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Amazing Marvin MCP setup and connection checker",
-  "description": "Generate Amazing Marvin MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Amazing Marvin for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-amazing-marvin-mcp",
+  "sourceRevision": "c4584e7c6b32cb18756b743f19c787747a1993a1b0e373d45e48d7b5ce6d2b14",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://github.com/amazingmarvin/MarvinAPI/wiki/Marvin-API"
+  ],
+  "utility": {
+    "problem": "Prepare Amazing Marvin and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "amazing-marvin",
   "appName": "Amazing Marvin",
-  "providerDocs": "https://github.com/amazingmarvin/MarvinAPI/wiki/Marvin-API",
-  "providerWebsite": "https://amazingmarvin.com/",
-  "authentication": {
-    "type": "custom_headers",
-    "requiredCredentialFields": [
-      "provider_header_credentials"
-    ],
-    "requiredHeaderNames": [
-      "X-API-Token",
-      "X-Full-Access-Token"
-    ],
-    "helpUrl": "https://github.com/amazingmarvin/MarvinAPI/wiki/Marvin-API",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-amazing-marvin-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }

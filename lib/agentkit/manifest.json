@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-amazing-marvin",
+      "description": "Connect AI agents to Amazing Marvin using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-amazing-marvin/SKILL.md": "394c790d0ea15496dc2df174ea98ce20fb8348cb5435d760e7fe3de9da50ebb1"
+  }
+}
